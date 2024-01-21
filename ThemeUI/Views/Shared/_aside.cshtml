@@ -32,11 +32,12 @@
 
         <!-- Sidebar Menu -->
         <nav class="mt-2">
-            <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+            <ul class="nav nav-pills nav-sidebar flex-column" role="menu" data-accordion="false">
 
-                <li class="nav-item">
-                    <a asp-controller="Home" asp-action="Index" class="nav-link active">
-                        <i class="nav-icon fas fa-tachometer-alt"></i>
+                <li class="nav-item" id="dashboard">
+                    <a href="/" class="nav-link active">
+                        @*<i class="nav-icon fas fa-tachometer-alt"></i>*@
+                        <img class="nav-icon side-icon" src="~/AdminLTE/icons/share.png" />
                         <p>
                             Dashboard
                         </p>
@@ -47,7 +48,7 @@
                 {
                     if (User.IsInRole("Admin") || User.IsInRole("Actions"))
                     {*@
-                        <li class="nav-item">
+                        <li class="action-menu nav-item menu-is-opening menu-open" id="actions">
                             <a href="#" class="nav-link">
                                 <i class="nav-icon fas fa-copy"></i>
                                 <p>
@@ -80,7 +81,7 @@
                     @*}
                     if (User.IsInRole("Admin") || User.IsInRole("Reconciliation"))
                     {*@
-                        <li class="nav-item">
+                        <li class="nav-item" id="reconciliation">
                             <a href="#" class="nav-link">
                                 <i class="nav-icon fas fa-copy"></i>
                                 <p>
@@ -113,7 +114,7 @@
                     @*}
                     if (User.IsInRole("Admin") || User.IsInRole("Reconciliation"))
                     {*@
-                        <li class="nav-item">
+                        <li class="nav-item" id="exportOverride">
                             <a href="@Url.Action("Index","ExportOverride")" class="nav-link">
                                 <i class="nav-icon fas fa-copy"></i>
                                 <p>
@@ -124,7 +125,7 @@
                     @*}
                     if (User.IsInRole("Admin") || User.IsInRole("Insight"))
                     {*@
-                        <li class="nav-item">
+                        <li class="nav-item" id="insight">
                             <a href="#" class="nav-link">
                                 <i class="nav-icon fas fa-copy"></i>
                                 <p>
@@ -142,6 +143,7 @@
                                 <li class="nav-item">
                                     <a href="@Url.Action("AuthHist","Insight")" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
+
                                         <p>Auth History</p>
                                     </a>
                                 </li>

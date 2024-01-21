@@ -18,3 +18,8 @@ select,
 textarea {
     max-width: 280px;
 }
+.side-icon {
+    width: 20px !important;
+    margin-top: 0px;
+    filter: brightness(1) invert(2);
+}

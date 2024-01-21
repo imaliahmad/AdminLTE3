@@ -199,8 +199,11 @@
     <Content Include="AdminLTE\dist\img\credit\visa.png" />
     <Content Include="AdminLTE\dist\img\default-150x150 %282%29.png" />
     <Content Include="AdminLTE\dist\img\default-150x150.png" />
+    <Content Include="AdminLTE\dist\img\download.png" />
+    <Content Include="AdminLTE\dist\img\giphy.gif" />
     <Content Include="AdminLTE\dist\img\icons %282%29.png" />
     <Content Include="AdminLTE\dist\img\icons.png" />
+    <Content Include="AdminLTE\dist\img\loader-gif.gif" />
     <Content Include="AdminLTE\dist\img\photo1 %282%29.png" />
     <Content Include="AdminLTE\dist\img\photo1.png" />
     <Content Include="AdminLTE\dist\img\photo2 %282%29.png" />
@@ -247,6 +250,7 @@
     <Content Include="AdminLTE\dist\js\pages\dashboard2.js" />
     <Content Include="AdminLTE\dist\js\pages\dashboard3 %282%29.js" />
     <Content Include="AdminLTE\dist\js\pages\dashboard3.js" />
+    <Content Include="AdminLTE\icons\share.png" />
     <Content Include="AdminLTE\index.html" />
     <Content Include="AdminLTE\plugins\bootstrap-colorpicker\css\bootstrap-colorpicker %282%29.css" />
     <Content Include="AdminLTE\plugins\bootstrap-colorpicker\css\bootstrap-colorpicker.css" />
